@@ -2,9 +2,9 @@
 
 screen -r -S megah -X quit
 echo
-echo "Leia o Qrcode abaixo e logo depois digite o comando onbot"
+echo "Lea el código QR a continuación y luego escriba el comando onbot para encende"
 echo
-echo "CTRL+C Para sair"
+echo "CTRL+C Para salir"
 echo
 sleep 2
 node /etc/megahbot/index.js
