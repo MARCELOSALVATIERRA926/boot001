@@ -1,40 +1,40 @@
 # WaBot-VendasSSH
 🔥Feito por:
-https://t.me/MegahBox
+https://t.me/Marceloguardia912"
 
 👥Canal do telegram:
-https://t.me/cursov2ray
+https://t.me/Marceloguardia912"
 
 🤖Bot de teste:
-https://wa.me/559191288339
+https://wa.me/3815569765?text=Hola,+por+favor+me+pasas+un+demo+gracias'
 
 Testado nos ubuntus 18 e 20
 ## • 🛠️Instalação
 ### • Parte 1
-Use o comando abaixo para instalar/atualizar o bot e suas dependências⤵️
+Utilice el siguiente comando para instalar/actualizar el bot y sus dependencias⤵️
 ```
 sudo apt install curl -y; bash <(curl https://raw.githubusercontent.com/endblack/WaBot-VendasSSH/main/install.sh)
 ```
 ### • Parte 2
-Use o comando abaixo para mudar a versão do nodejs⤵️
+Utilice el siguiente comando para cambiar la versión de nodejs⤵️
 ```
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 ```
-Após colocar o comando, saia da vps e entre novamente, em seguida coloque o comando abaixo ⤵️
+Luego de ingresar el comando, salga del VPS y vuelva a ingresar, luego ingrese el siguiente comando ⤵️
 ```
 nvm install 16
 ```
 
-### • 👨‍🏫Instruções
-Após terminar a instalação, digite o comando `qrcode` e leia o Qrcode que irá aparecer no terminal, após ler o Qrcode espere uns 5 segundos e dê um CTRL+c para sair desta parte, agora digite `onbot` para ativar o bot, para desativar é só digitar `offbot`, edite seus dados no arquivo `config.js`, sempre que editar os dados, reinicie o bot, basta digitar `onbot`, o bot não tem autostart, então toda vez que sua vps desligar você terá que ativar manualmente com o comando `onbot`
+### • 👨‍🏫Instrucciones
+Luego de terminar la instalación escribe el comando `qrcode` y lee el Qrcode que te aparecerá en la terminal, luego de leer el Qrcode espera unos 5 segundos y presiona CTRL+c para salir de esta parte, ahora escribe `onbot` para activar el bot, para desactivarlo solo escribe `offbot`, edita tus datos en el archivo `config.js`, siempre que edites los datos, reinicia el bot, solo escribe `onbot`, el bot no tiene inicio automático, por lo que cada vez que tu VPS se apague tendrás que activarlo manualmente con el comando `onbot`, para apagar bot `offbot`
 
 ### • 📌Obs
-- Use na mesma vps do SSH
+-Usar en el mismo VPS que SSH
 
 
 ### 📝Complemento
-- Como instalar e configurar:
+- Cómo instalar y configurar:
 https://youtu.be/0SiM7FX76xg?si=fAPo6nTQDWnBRBBK
 
-- Como obter o token do mercado pago:
+- Cómo conseguir el token de Mercado Pago:
 https://youtu.be/nA4gP6NcF_o?si=f0jfeelvjpJ87FXS
