@@ -1,48 +1,43 @@
 #!/bin/bash
-
-# =============================
-# Instalador seguro de MegaHBot
-# =============================
-
-# Comprobar que es root
-if [[ "$(whoami)" != "root" ]]; then
+[[ "$(whoami)" != "root" ]] && {
     echo
-    echo "Este instalador debe ejecutarse como usuario root."
+    echo "Instale com usuario root!"
     echo
-    exit 1
-fi
-
-# Rutas locales a los archivos ya revisados
-SRC_DIR="$(pwd)/archivos_locales"
-
-# Verificar que la carpeta con los archivos existe
-if [[ ! -d "$SRC_DIR" ]]; then
-    echo "❌ No encuentro la carpeta $SRC_DIR con los archivos locales revisados."
-    echo "Copia en esa carpeta: index.js, veri.js, gerar.js, qrcode, config.js, megahbot.zip"
-    exit 1
-fi
-
-# Crear estructura de instalación
-mkdir -p /etc/megahbot/src
-
-# Copiar binarios y scripts
-cp "$SRC_DIR/index.js" /etc/megahbot/
-cp "$SRC_DIR/veri.js" "$SRC_DIR/gerar.js" /etc/megahbot/src/
-cp "$SRC_DIR/qrcode" /bin/
-cp "$SRC_DIR/onbot" "$SRC_DIR/offbot" /bin/
-cp "$SRC_DIR/config.js" /etc/megahbot/
-
-# Permisos
-chmod +x /bin/qrcode /bin/onbot /bin/offbot
-
-# Instalar dependencias necesarias
+    exit 0
+}
+[[ -e /etc/megahbot/index.js ]] && {
+    echho
+    echo "@tualizando bot, aguarde..."
+    echo
+    wget https://raw.githubusercontent.com/MARCELOSALVATIERRA926/boot001/refs/heads/main/mult/index.js > /dev/null 2>&1
+    wget https://raw.githubusercontent.com/MARCELOSALVATIERRA926/boot001/refs/heads/main/mult/veri.js > /dev/null 2>&1
+    wget https://raw.githubusercontent.com/MARCELOSALVATIERRA926/boot001/refs/heads/main/mult/gerar.js > /dev/null 2>&1
+    wget https://raw.githubusercontent.com/MARCELOSALVATIERRA926/boot001/refs/heads/main/mult/qrcode > /dev/null 2>&1
+    chmod +x qrcode
+    mv qrcode /bin
+    mv index.js /etc/megahbot
+    mv veri.js gerar.js /etc/megahbot/src
+    echo
+    echo "¡Actualización completa! Escribe \"onbot\" para ejecutar el nuevo programa."
+    echo
+    exit 0
+}
 apt update -y
-apt install -y nodejs unzip screen wget
-
-# Descomprimir el bot principal
-cp "$SRC_DIR/megahbot.zip" /etc/megahbot.zip
-unzip -o /etc/megahbot.zip -d /etc/
-
 echo
-echo "✅ Instalación completa con archivos locales revisados."
-echo "Para iniciar el bot, ejecuta: onbot"
+echo "Instalando bot, aguarde..."
+echo
+apt install nodejs -y > /dev/null 2>&1
+apt install unzip -y > /dev/null 2>&1
+apt install screen -y > /dev/null 2>&1
+apt install wget -y > /dev/null 2>&1
+wget https://raw.githubusercontent.com/MARCELOSALVATIERRA926/boot001/refs/heads/main/mult/onbot > /dev/null 2>&1
+wget https://raw.githubusercontent.com/MARCELOSALVATIERRA926/boot001/refs/heads/main/mult/offbot > /dev/null 2>&1
+wget https://raw.githubusercontent.com/MARCELOSALVATIERRA926/boot001/refs/heads/main/mult/qrcode > /dev/null 2>&1
+wget https://raw.githubusercontent.com/MARCELOSALVATIERRA926/boot001/refs/heads/main/mult/config.js > /dev/null 2>&1
+chmod +x onbot offbot qrcode
+mv onbot offbot qrcode /bin
+wget https://raw.githubusercontent.com/MARCELOSALVATIERRA926/boot001/refs/heads/main/mult/megahbot.zip -O /etc/megahbot.zip > /dev/null 2>>
+unzip /etc/megahbot.zip
+mv megahbot /etc
+echo
+echo "¡Instalación completa! No olvides editar los datos en el archivo config.js"
