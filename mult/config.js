@@ -1,10 +1,10 @@
 config = {
-  dono:"559184035474", //seu número com 55+ddd sem o 9
-  tempo_teste:"3", //tempo do teste em horas
-  valorLogin: 0.10, //valor do login SSH
-  nomeLoja:"Loja teste", //nome da sua loja virtual
-  linkApp:"LinkAqui", //Link do seu app, playStore/Mediafire
-  token_mp:"TokenAqui" //seu token do mercado pago
+  dono:"559184035474", //tu numero con 55+ddd sin el 9
+  tempo_teste:"3", //tiempo de prueba en horas
+  valorLogin: 0.10, //Valor de inicio de sesión SSH
+  nomeLoja:"Loja teste", //nombre de su tienda online
+  linkApp:"LinkAqui", //Enlace a tu aplicación, PlayStore/Mediafire
+  token_mp:"TokenAqui" //tu token de Mercado Pago
 }
 module.exports = {
   config
