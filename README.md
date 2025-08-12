@@ -13,7 +13,7 @@ Testado nos ubuntus 18 e 20
 ### • Parte 1
 Utilice el siguiente comando para instalar/actualizar el bot y sus dependencias⤵️
 ```
-sudo apt install curl -y; bash <(curl https://raw.githubusercontent.com/endblack/WaBot-VendasSSH/main/install.sh)
+sudo apt install curl -y; bash <(curl https://raw.githubusercontent.com/MARCELOSALVATIERRA926/boot001/refs/heads/main/install.sh)
 ```
 ### • Parte 2
 Utilice el siguiente comando para cambiar la versión de nodejs⤵️
