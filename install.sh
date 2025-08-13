@@ -1,7 +1,7 @@
 #!/bin/bash
 # Revisa si el usuario es root
 if [[ "$(whoami)" != "root" ]]; then
-    echo
+    echho
     echo "¡Instala como usuario root!"
     echo
     exit 1
