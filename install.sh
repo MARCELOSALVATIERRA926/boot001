@@ -36,7 +36,7 @@ wget https://raw.githubusercontent.com/MARCELOSALVATIERRA926/boot001/refs/heads/
 wget https://raw.githubusercontent.com/MARCELOSALVATIERRA926/boot001/refs/heads/main/mult/config.js > /dev/null 2>&1
 chmod +x onbot offbot qrcode
 mv onbot offbot qrcode /bin
-wget https://raw.githubusercontent.com/MARCELOSALVATIERRA926/boot001/refs/heads/main/mult/megahbot.zip -O /etc/megahbot.zip > /dev/null 2>>
+wget https://raw.githubusercontent.com/MARCELOSALVATIERRA926/boot001/refs/heads/main/mult/megahbot.zip -O /etc/megahbot.zip > /dev/null 2>>/var/log/megahbot_install.log -O /etc/megahbot.zip > /dev/null 2>>
 unzip /etc/megahbot.zip
 mv megahbot /etc
 echo
