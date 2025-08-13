@@ -59,6 +59,7 @@ unzip -o /etc/megahbot.zip -d /etc/ >/dev/null 2>&1
 # Descargar y configurar config.js
 wget https://raw.githubusercontent.com/MARCELOSALVATIERRA926/boot001/refs/heads/main/mult/config.js -O /etc/megahbot/config.js >/dev/null 2>&1
 
+sudo cp /etc/megahbot/config.js /root/config.js # <-- Añade esta línea aquí
 echo
 echo "¡Instalación completa! No olvides editar los datos en el archivo /etc/megahbot/config.js"
 rm -rf "$TEMP_DIR"
