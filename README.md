@@ -20,6 +20,12 @@ Utilice el siguiente comando para cambiar la versión de nodejs⤵️
 ```
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 ```
+Este comado despues⬇️
+```
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+```
+Reinicia la vps.
 Luego de ingresar el comando, salga del VPS y vuelva a ingresar, luego ingrese el siguiente comando ⤵️
 ```
 nvm install 16
